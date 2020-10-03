@@ -1,19 +1,19 @@
 header.header
 	.container
-		.logo
+		a.logo(href="/")
 			+icon('logo', 'logo__svg')
 		nav.nav
 			ul.nav__list
 				li.nav__item
-					a.nav__link(href="#") Главная
+					a.nav__link(href="/") Главная
 				li.nav__item
-					a.nav__link(href="#") Каталог
+					a.nav__link(href="./catalog.html") Каталог
 				li.nav__item
-					a.nav__link(href="#") Таможня
+					a.nav__link(href="./customs.html") Таможня
 				li.nav__item
-					a.nav__link(href="#") Услуги
+					a.nav__link(href="./service.html") Услуги
 				li.nav__item
-					a.nav__link(href="#") Контакти
+					a.nav__link(href="./contacts.html") Контакти
 		.header-contacts
 			ul.header-contacts__list
 				li.header-contacts__item
@@ -23,8 +23,8 @@ header.header
 				li.header-contacts__item
 					.header-contacts__icon
 						+icon('phone', 'header-contacts__svg')
-					a.header-contacts__phone(href="#") +380 99 408 50 10
+					a.header-contacts__phone(href="tel:+380994085010") +380 99 408 50 10
 				li.header-contacts__item
 					.header-contacts__icon
 						+icon('phone', 'header-contacts__svg')
-					a.header-contacts__phone(href="#") +380 63 254 05 54
+					a.header-contacts__phone(href="tel:+380632540554") +380 63 254 05 54
