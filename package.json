@@ -63,7 +63,10 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "inputmask": "^5.0.5",
+    "jqeury": "0.0.1-security",
     "jquery": "^3.5.1",
+    "jquery-mask-plugin": "^1.14.16",
     "normalize.css": "^8.0.1",
     "owl.carousel": "^2.3.4"
   },

@@ -5,6 +5,7 @@
     <title>LD Motors | Auto import company</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
   </head>
   <body class="body">
     <header class="header">
@@ -49,7 +50,39 @@
         </div>
       </div>
     </header>
-    <section class="main"></section>
+    <section class="main">
+      <div class="container">
+        <div class="main__slider">
+          <div class="main-slide">
+            <h1 class="main-slide__title">Закажите бесплатный подбор от наших специалистов</h1>
+            <div class="main-slide__subtitle">И получите 7-10 вариантов прямо сейчас</div>
+            <form class="main-slide__form" action="" method="post">
+              <select class="main-slide__select">
+                <option selected>Марка</option>
+                <option>Audi</option>
+                <option>BMW</option>
+                <option>Honda</option>
+              </select>
+              <select class="main-slide__select">
+                <option selected>Модель</option>
+                <option>100</option>
+                <option>80</option>
+                <option>A3</option>
+                <option>A4</option>
+              </select>
+              <select class="main-slide__select">
+                <option selected>Ориентировочный бюджет</option>
+                <option>3000$ - 4000$</option>
+                <option>4000$ - 5000$</option>
+              </select>
+              <input class="main-slide__input" type="text" name="client" required placeholder="Введите ваше имя">
+              <input class="main-slide__input" id="tel" type="text" name="tel" required placeholder="Введите телефон" v-mask="'+380 99 999 99 99'">
+              <button class="main-slide__button" type="submit">Получить подбор</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="news">
       <div class="container">
         <div class="news__list">
