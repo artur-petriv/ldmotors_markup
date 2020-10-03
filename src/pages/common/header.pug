@@ -1,6 +1,7 @@
 header.header
 	.container
 		.logo
+			+icon('logo', 'logo__svg')
 		nav.nav
 			ul.nav__list
 				li.nav__item
@@ -17,9 +18,13 @@ header.header
 			ul.header-contacts__list
 				li.header-contacts__item
 					.header-contacts__icon
+						+icon('map-mark', 'header-contacts__svg')
 					.header-contacts__text Кудрявский спуск 5Б
 				li.header-contacts__item
 					.header-contacts__icon
+						+icon('phone', 'header-contacts__svg')
 					a.header-contacts__phone(href="#") +380 99 408 50 10
 				li.header-contacts__item
+					.header-contacts__icon
+						+icon('phone', 'header-contacts__svg')
 					a.header-contacts__phone(href="#") +380 63 254 05 54

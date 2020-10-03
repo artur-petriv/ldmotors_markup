@@ -1,0 +1,48 @@
+.header
+    padding: 20px 0
+    background-color: $color_grey
+    &-contacts
+        &__list
+            list-style: none
+            color: $color_white
+        &__item
+            padding-bottom: 10px
+            display: flex
+            align-items: center
+            font-size: 16px
+            &:last-child
+                padding-bottom: 0
+        &__icon
+            padding-right: 10px
+            display: flex
+            justify-content: center
+            align-items: center
+        &__text
+        &__phone
+        &__svg
+            width: 16px
+            height: 16px
+            fill: $color_green
+    & > .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+
+.logo
+    display: flex
+    & > svg
+        display: flex
+        width: 250px
+        height: 60px
+.nav
+    &__list
+        list-style: none
+        display: flex
+        font-family: $font_futura__bold
+    &__item
+        padding-right: 30px
+    &__link
+        font-size: $size_menu
+        font-weight: bold
+        text-transform: uppercase

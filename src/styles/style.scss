@@ -1,4 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@import "utils/normalize.scss";
+@import "utils/variables.sass";
+@import "utils/fonts.scss";
+@import "common/global.sass";
+@import "common/header.sass";

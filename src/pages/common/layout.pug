@@ -1,3 +1,6 @@
+//- include svgSprite mixin
+include mixin-icon.pug
+
 doctype html
 html(lang="ru")
 	block head
@@ -6,7 +9,7 @@ html(lang="ru")
 			title LD Motors | Auto import company
 			meta(content="width=device-width, initial-scale=1" name="viewport")
 			link(rel="stylesheet" href="css/style.min.css")
-	body
+	body.body
 		block header
 			include header
 		block content

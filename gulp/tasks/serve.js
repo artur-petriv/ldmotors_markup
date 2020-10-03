@@ -28,7 +28,7 @@ module.exports = function serve(cb) {
     );
   gulp.watch("src/img/svg/*.svg", gulp.series(svgSprite, readyReload));
   gulp.watch(
-    "src/sass/**/*.sass",
+    "src/styles/**/*.{sass, scss}",
     gulp.series(styles, (cb) =>
       gulp.src("build/css").pipe(server.stream()).on("end", cb)
     )
