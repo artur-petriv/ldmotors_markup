@@ -1,2 +1,16 @@
-node_modules
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.idea
+.vscode
+todo
+
+#Support files
+*.log*
+node_modules/
+
+# Folder with builded project files
+build/
 todo
