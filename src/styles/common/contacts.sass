@@ -1,12 +1,12 @@
 .contacts
-	padding: 100px 0 20px
+	padding: 100px 0 60px
 	background-color: $color_dark
 	&__wrap
 		margin-bottom: 60px
 		display: flex
 		align-items: center
 	&__content
-		flex-basis: 50%
+		flex-basis: 40%
 	&__list
 	&__item
 		margin-bottom: 30px
@@ -22,16 +22,30 @@
 
 	&__map
 		background-color: #fff
-		flex-basis: 50%
+		flex-basis: 60%
 		height: 500px
 		&-main
+			height: 500px
 
 	&__socials
 		text-align: center
 		&-list
+			display: flex
+			align-items: center
+			justify-content: center
 	&__social
+		padding-right: 20px
+		&:last-child
+			padding-left: 0
 	&__title
 	&__svg
 		fill: $color_green
 		height: 22px
 		width: 22px
+
+.social
+	display: flex
+	&__svg
+		fill: $color_green
+		height: 40px
+		width: 40px

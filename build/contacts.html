@@ -87,15 +87,18 @@
             </ul>
           </div>
           <div class="contacts__map">
-            <div class="contacts__map-main"></div>
+            <div class="contacts__map-main" id="map"></div>
           </div>
         </div>
         <div class="contacts__socials">
           <h1 class="contacts__title">Мы в социальных сетях</h1>
-          <div class="contacts__socials-list">
-            <div class="contacts__social"></div>
-            <div class="contacts__social"></div>
-          </div>
+          <div class="contacts__socials-list"><a class="contacts__social" href="https://www.instagram.com/">
+              <svg class="icon-instagram social__svg">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg></a><a class="contacts__social" href="https://www.facebook.com/">
+              <svg class="icon-facebook social__svg">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg></a></div>
         </div>
       </div>
     </section>
@@ -202,6 +205,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/main.min.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvt_XnVi4vJyFx1LhfRK_tm-5F3IPhOj0&amp;language=ru"></script>
+    <script defer src="js/main.min.js"></script>
   </body>
 </html>

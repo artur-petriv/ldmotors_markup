@@ -31,10 +31,16 @@ block content
 							a.contacts__link(href="mailto:ldmotorsmail@gmail.com") ldmotorsmail@gmail.com
 
 				.contacts__map
-					.contacts__map-main
+					#map.contacts__map-main
 
 			.contacts__socials
 				h1.contacts__title Мы в социальных сетях
 				.contacts__socials-list
-					.contacts__social
-					.contacts__social
+					a.contacts__social(href="https://www.instagram.com/")
+						+icon('instagram', 'social__svg')
+					a.contacts__social(href="https://www.facebook.com/")
+						+icon('facebook', 'social__svg')
+
+block scripts
+	script(defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvt_XnVi4vJyFx1LhfRK_tm-5F3IPhOj0&language=ru")
+	script(defer src="js/main.min.js")

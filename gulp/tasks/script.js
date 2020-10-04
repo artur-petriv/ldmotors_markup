@@ -7,7 +7,7 @@ const eslint = require('gulp-eslint')
 
 module.exports = function script() {
   return gulp
-    .src("src/js/main.js")
+    .src("src/js/*.js")
     .pipe(plumber())
     .pipe(eslint())
     .pipe(eslint.format())
