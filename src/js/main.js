@@ -5,11 +5,10 @@ require(`jquery-mask-plugin`)
 
 
 document.addEventListener(`DOMContentLoaded`, function () {
-    initMap()
 
     $(`#tel`).mask(`+38 (000) 000-00-00`)
 
-    const Swiper = new Swiper(`.swiper-container`, {
+    const swiper = new Swiper(`.swiper-container`, {
         grabCursor: false,
         simulateTouch: false,
         pagination: {
@@ -21,6 +20,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
             prevEl: `.swiper-button-prev`,
         },
     })
+
 
     function initMap() {
         const map = new google.maps.Map(document.getElementById(`map`), {
@@ -37,7 +37,8 @@ document.addEventListener(`DOMContentLoaded`, function () {
             map,
         })
         marker.addListener(`click`, function () {
-        // info.open(map, marker)
         })
     }
+
+    initMap()
 })
