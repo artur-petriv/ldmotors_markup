@@ -14,3 +14,4 @@ node_modules/
 # Folder with builded project files
 build/
 todo
+build/js/main.min.js
