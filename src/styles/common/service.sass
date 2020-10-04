@@ -9,6 +9,7 @@
 	&__text
 	
 	&-road
+		margin-top: 40px
 		&__title
 			padding: 20px 0
 			color: $color_green
@@ -16,13 +17,6 @@
 		&__list
 			display: flex
 			flex-direction: column
-		&__item
-			display: flex
-			justify-content: space-between
-			text-align: right
-			&:last-child
-				.service-road__content
-					padding-bottom: 0
 		&__content
 			padding-bottom: 40px
 			margin-left: auto
@@ -34,6 +28,17 @@
 			margin: 0
 			font-family: $font_futura__bold
 			font-size: 20px
+			position: relative
+			&::after
+				content: ''
+				height: 13px
+				width: 13px
+				background-color: $color_green
+				position: absolute
+				right: -27px
+				top: 50%
+				border-radius: 50%
+				z-index: 2
 		&__line
 			margin: 0 20px
 			width: 2px
@@ -58,6 +63,29 @@
 			height: 50px
 			width: 50px
 			fill: $color_green
+		&__item
+			display: flex
+			justify-content: space-between
+			text-align: right
+			&:nth-of-type(even)
+				.service-road__content
+					margin-left: 0
+					margin-right: auto
+					order: 3
+					text-align: left
+				.service-road__line
+					order: 2
+				.service-road__icon
+					margin-left: auto
+					margin-right: 0
+				.service-road__subtitle
+					&::after
+						left: -27px
+			&:last-child
+				.service-road__content
+					padding-bottom: 0
+				.service-road__icon
+					padding-bottom: 10px
 	&__cost
 		margin-top: 60px
 	&__subtitle
