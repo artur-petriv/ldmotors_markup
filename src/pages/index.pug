@@ -3,31 +3,92 @@ extends common/layout
 block content
 	section.main
 		.container
-			.main__slider
-				.main-slide
-					h1.main-slide__title Закажите бесплатный подбор от наших специалистов
-					.main-slide__subtitle И получите 7-10 вариантов прямо сейчас
-					form.main-slide__form(action="" method="post")
-						
-						select.main-slide__select
-							option(selected) Марка
-							option Audi
-							option BMW
-							option Honda
-						
-						select.main-slide__select
-							option(selected) Модель
-							option 100
-							option 80
-							option A3
-							option A4
+			.swiper-container
+				.swiper-wrapper.main__slider
 
-						select.main-slide__select
-							option(selected) Ориентировочный бюджет
-							option 3000$ - 4000$
-							option 4000$ - 5000$
+					.main-slide.swiper-slide
+						h1.main-slide__title Закажите бесплатный подбор от наших специалистов
+						.main-slide__subtitle И получите 7-10 вариантов прямо сейчас
+						form.main-slide__form(action="" method="post")
+							
+							select.main-slide__select
+								option(selected) Марка
+								option Audi
+								option BMW
+								option Honda
+							
+							select.main-slide__select
+								option(selected) Модель
+								option 100
+								option 80
+								option A3
+								option A4
 
-						input.main-slide__input(type="text" name="client" required placeholder="Введите ваше имя")
-						input#tel.main-slide__input(type="text" name="tel" required placeholder="Введите телефон" v-mask="'+380 99 999 99 99'")
+							select.main-slide__select
+								option(selected) Ориентировочный бюджет
+								option 3000$ - 4000$
+								option 4000$ - 5000$
 
-						button.main-slide__button(type="submit") Получить подбор
+							input.main-slide__input(type="text" name="client" required placeholder="Введите ваше имя")
+							input#tel.main-slide__input(type="text" name="tel" required placeholder="Введите телефон" v-mask="'+380 99 999 99 99'")
+							button.main-slide__button.button(type="submit") Получить подбор
+
+					.main-slide.swiper-slide
+						h2.main-slide__title Что входит в стоимость наших услуг?
+						.main-slide__wrap
+							.main-slide__part.main-slide__left
+								.main-slide__image
+									img.main-slide__img(src="img/main-slider_car.png", alt="Car")
+							.main-slide__part.main-slide__right
+								ul.main-slide__list
+
+									li.main-slide__item
+										span.main-slide__number 1.
+										| Консультация
+
+									li.main-slide__item
+										span.main-slide__number 2.
+										| Подбор автомобиля
+
+									li.main-slide__item
+										span.main-slide__number 3.
+										| Проверка истории
+
+									li.main-slide__item
+										span.main-slide__number 4.
+										| Проведение торгов
+
+									li.main-slide__item
+										span.main-slide__number 5.
+										| Оплата автомобиля
+
+									li.main-slide__item
+										span.main-slide__number 6.
+										| Доставка
+
+									li.main-slide__item
+										span.main-slide__number 7.
+										| Растаможка
+
+									li.main-slide__item
+										span.main-slide__number 8.
+										| Доставка по Украине
+
+									li.main-slide__item
+										span.main-slide__number 9.
+										| Ремонт
+
+									li.main-slide__item
+										span.main-slide__number 10.
+										| Сертификация, учёт
+
+						.main-package
+							.main-package__wrap
+								.main-package__title Пакет услуг за 499$
+
+							button.main-package__button.button Заказать
+
+				.swiper-pagination
+
+				.swiper-button-prev
+				.swiper-button-next
