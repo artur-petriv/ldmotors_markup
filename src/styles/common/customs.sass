@@ -2,7 +2,7 @@
 	padding: 100px 0
 	background-color: $color_dark
 	position: relative
-	z-index: -1
+	z-index: 0
 	& > .container
 		position: relative
 	&__bg
@@ -15,7 +15,8 @@
 		opacity: 0.05
 		display: flex
 	&__slider
-		margin-bottom: 80px
+		margin-bottom: 50px
+		z-index: 1
 	&-slide
 		text-align: center
 		&__title
@@ -29,6 +30,7 @@
 			max-width: 700px
 			line-height: 1.65
 	&-rates
+		padding-top: 60px
 		text-align: center
 		&__title
 			margin-bottom: 40px

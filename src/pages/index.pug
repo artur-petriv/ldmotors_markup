@@ -11,24 +11,9 @@ block content
 						.main-slide__subtitle И получите 7-10 вариантов прямо сейчас
 						form.main-slide__form(action="" method="post")
 							
-							select.main-slide__select
-								option(selected) Марка
-								option Audi
-								option BMW
-								option Honda
-							
-							select.main-slide__select
-								option(selected) Модель
-								option 100
-								option 80
-								option A3
-								option A4
-
-							select.main-slide__select
-								option(selected) Ориентировочный бюджет
-								option 3000$ - 4000$
-								option 4000$ - 5000$
-
+							input.main-slide__input(type="text" name="mark" required placeholder="Марка")
+							input.main-slide__input(type="text" name="model" required placeholder="Модель")
+							input.main-slide__input(type="text" name="budget" required placeholder="Ориентировочный бюджет")
 							input.main-slide__input(type="text" name="client" required placeholder="Введите ваше имя")
 							input#tel.main-slide__input(type="text" name="tel" required placeholder="Введите телефон" v-mask="'+380 99 999 99 99'")
 							button.main-slide__button.button(type="submit") Получить подбор
