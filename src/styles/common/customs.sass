@@ -1,6 +1,19 @@
 .customs
 	padding: 100px 0
 	background-color: $color_dark
+	position: relative
+	z-index: -1
+	& > .container
+		position: relative
+	&__bg
+		position: absolute
+		top: 0	
+		left: 0
+		width: 170px
+		height: 1200px
+		z-index: -1
+		opacity: 0.05
+		display: flex
 	&__slider
 		margin-bottom: 80px
 	&-slide

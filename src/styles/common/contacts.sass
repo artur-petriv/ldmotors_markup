@@ -1,20 +1,34 @@
 .contacts
 	padding: 100px 0 60px
 	background-color: $color_dark
+	&__bg
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 100%
+		height: 650px
+		z-index: -1
+		opacity: 0.05
+		display: flex
 	&__wrap
-		margin-bottom: 60px
+		margin-bottom: 100px
 		display: flex
 		align-items: center
+		position: relative
 	&__content
 		flex-basis: 40%
+		display: flex
 	&__list
 	&__item
-		margin-bottom: 30px
+		margin-bottom: 50px
 		display: flex
 		align-items: center
 		font-size: 24px
 		font-family: $font_futura__bold
 		line-height: 1
+		&:last-child
+			margin-bottom: 0
 	&__icon
 		padding-right: 15px
 	&__text
