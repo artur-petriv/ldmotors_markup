@@ -23,7 +23,7 @@ module.exports = function styles() {
         ],
       })
     )
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(
       autoprefixer({

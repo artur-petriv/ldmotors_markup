@@ -31,6 +31,7 @@
 			text-transform: uppercase
 			font-family: $font_futura__bold
 			font-size: 30px
+			flex: 1 0 auto
 			@media screen and (max-width: 568px)
 				font-size: 17px
 				line-height: 1.65
@@ -59,6 +60,8 @@
 			& > option
 				background-color: transparent
 				color: $color_dark
+		&__image
+		&__img
 		&__input
 			padding: 10px 20px
 			width: 350px
@@ -84,12 +87,20 @@
 				flex-direction: column
 				margin: 20px auto 0
 		&__part
-			flex-basis: 50%
+			width: 50%
+			flex: 1 0 auto
 			&:last-child
-				flex-basis: 40%
+				width: 40%
+			@media screen and (max-width: 568px)
+				margin: 0 auto
+				width: 90%
+				&:last-child
+					width: 90%
 		&__left
+			order: 0
 		&__right
 			padding-left: 60px
+			order: 1
 			@media screen and (max-width: 568px)
 				padding-bottom: 40px
 				padding-left: 0
