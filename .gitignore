@@ -15,3 +15,5 @@ node_modules/
 build/
 todo
 build/js/main.min.js
+php/email.cnf
+php/order.php

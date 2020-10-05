@@ -69,12 +69,13 @@
             <div class="main-slide swiper-slide">
               <h1 class="main-slide__title">Закажите бесплатный подбор от наших специалистов</h1>
               <div class="main-slide__subtitle">И получите 7-10 вариантов прямо сейчас</div>
-              <form class="main-slide__form" action="" method="post">
+              <form class="main-slide__form" action="order.php" method="post">
                 <input class="main-slide__input" type="text" name="mark" required placeholder="Марка">
                 <input class="main-slide__input" type="text" name="model" required placeholder="Модель">
                 <input class="main-slide__input" type="text" name="budget" required placeholder="Ориентировочный бюджет">
                 <input class="main-slide__input" type="text" name="client" required placeholder="Введите ваше имя">
                 <input class="main-slide__input" id="tel" type="text" name="tel" required placeholder="Введите телефон" v-mask="'+380 99 999 99 99'">
+                <input type="hidden" name="pr" value="1">
                 <button class="main-slide__button button" type="submit">Получить подбор</button>
               </form>
             </div>

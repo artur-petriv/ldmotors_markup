@@ -9,13 +9,14 @@ block content
 					.main-slide.swiper-slide
 						h1.main-slide__title Закажите бесплатный подбор от наших специалистов
 						.main-slide__subtitle И получите 7-10 вариантов прямо сейчас
-						form.main-slide__form(action="" method="post")
+						form.main-slide__form(action="order.php" method="post")
 							
 							input.main-slide__input(type="text" name="mark" required placeholder="Марка")
 							input.main-slide__input(type="text" name="model" required placeholder="Модель")
 							input.main-slide__input(type="text" name="budget" required placeholder="Ориентировочный бюджет")
 							input.main-slide__input(type="text" name="client" required placeholder="Введите ваше имя")
 							input#tel.main-slide__input(type="text" name="tel" required placeholder="Введите телефон" v-mask="'+380 99 999 99 99'")
+							input(type="hidden" name="pr" value="1")
 							button.main-slide__button.button(type="submit") Получить подбор
 
 					.main-slide.swiper-slide
