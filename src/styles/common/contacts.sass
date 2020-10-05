@@ -1,6 +1,8 @@
 .contacts
 	padding: 100px 0 60px
 	background-color: $color_dark
+	@media screen and (max-width: 568px)
+		padding: 40px 0
 	&__bg
 		position: absolute
 		top: 50%
@@ -16,9 +18,14 @@
 		display: flex
 		align-items: center
 		position: relative
+		@media screen and (max-width: 568px)
+			margin-bottom: 40px
+			flex-direction: column
 	&__content
 		flex-basis: 40%
 		display: flex
+		@media screen and (max-width: 568px)
+			flex-basis: 100%
 	&__list
 	&__item
 		margin-bottom: 50px
@@ -29,6 +36,9 @@
 		line-height: 1
 		&:last-child
 			margin-bottom: 0
+		@media screen and (max-width: 568px)
+			margin-bottom: 20px
+			font-size: 18px
 	&__icon
 		padding-right: 15px
 	&__text
@@ -40,7 +50,10 @@
 		height: 500px
 		&-main
 			height: 500px
-
+		@media screen and (max-width: 568px)
+			margin-top: 50px
+			width: 100%
+			flex-basis: 100%
 	&__socials
 		text-align: center
 		&-list
@@ -52,10 +65,17 @@
 		&:last-child
 			padding-left: 0
 	&__title
+		font-size: 30px
+		font-family: $font_futura__bold
+		@media screen and (max-width: 568px)
+			font-size: 22px
 	&__svg
 		fill: $color_green
 		height: 22px
 		width: 22px
+		@media screen and (max-width: 568px)
+			height: 18px
+			width: 18px
 
 .social
 	display: flex
@@ -63,3 +83,6 @@
 		fill: $color_green
 		height: 40px
 		width: 40px
+		@media screen and (max-width: 568px)
+			height: 30px
+			width: 30px
