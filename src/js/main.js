@@ -8,6 +8,19 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
     $(`#tel`).mask(`+38 (000) 000-00-00`)
 
+    const menuBtn = document.querySelector(`.hamburger`)
+    const navMenu = document.querySelector(`.nav-mob`)
+    const body = document.querySelector(`.body`)
+
+    function toggleMenu(e) {
+        e.preventDefault()
+        menuBtn.classList.toggle(`is-active`)
+        navMenu.classList.toggle(`is-visible`)
+        body.classList.toggle(`overflow-hidden`)
+    }
+
+    menuBtn.addEventListener(`click`, toggleMenu)
+
     const swiper = new Swiper(`.swiper-container`, {
         slidesPerView: 1,
         grabCursor: false,

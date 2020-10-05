@@ -1,6 +1,7 @@
 .header
-    padding: 20px 0
     background-color: $color_grey
+    position: relative
+    z-index: 2
     &-contacts
         &__list
             list-style: none
@@ -31,15 +32,6 @@
         justify-content: space-between
 
 
-.logo
-    display: flex
-    & > svg
-        display: flex
-        width: 250px
-        height: 60px
-        @media screen and (max-width: 568px)
-            width: 170px
-            height: 40px
 .nav
     &__list
         list-style: none
@@ -53,3 +45,49 @@
         text-transform: uppercase
     @media screen and (max-width: 568px)
         display: none
+    &-mob
+        padding: 100px 15px 0
+        position: fixed
+        top: 0
+        left: -100vw
+        height: 100vh
+        width: 100%
+        opacity: 0
+        visibility: hidden
+        background-color: $color_dark
+        transition: all 0.15s linear
+        &__wrap
+        &__list
+            text-align: center
+        &__item
+            margin-bottom: 10px
+        &__link
+            font-size: 20px
+
+.logo
+    padding: 20px 0
+    display: flex
+    & > svg
+        display: flex
+        width: 250px
+        height: 60px
+        @media screen and (max-width: 568px)
+            width: 170px
+            height: 40px
+
+
+.is-active
+    z-index: 999
+
+.is-visible
+    left: 0
+    opacity: 1
+    visibility: visible
+    overflow: hidden
+.overflow-hidden
+    overflow-y: hidden
+
+.hamburger
+    display: none
+    @media screen and (max-width: 568px)
+        display: inline-block

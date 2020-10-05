@@ -5,7 +5,7 @@ header.header
 		nav.nav
 			ul.nav__list
 				li.nav__item
-					a.nav__link(href="/") Главная
+					a.nav__link(href="./") Главная
 				li.nav__item
 					a.nav__link(href="./catalog.html") Каталог
 				li.nav__item
@@ -28,3 +28,27 @@ header.header
 					.header-contacts__icon
 						+icon('phone', 'header-contacts__svg')
 					a.header-contacts__phone(href="tel:+380632540554") +380 63 254 05 54
+
+		button.hamburger.hamburger--spin(type="button")
+			span.hamburger-box
+				span.hamburger-inner
+
+
+	.nav-mob
+		.nav-mob__wrap
+			ul.nav-mob__list
+
+				li.nav-mob__item
+					a.nav-mob__link(href="./") Главная
+
+				li.nav-mob__item
+					a.nav-mob__link(href="./catalog.html") Каталог
+
+				li.nav-mob__item
+					a.nav-mob__link(href="./customs.html") Таможня
+
+				li.nav-mob__item
+					a.nav-mob__link(href="./service.html") Услуги
+
+				li.nav-mob__item
+					a.nav-mob__link(href="./contacts.html") Контакти
