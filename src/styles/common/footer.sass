@@ -17,8 +17,14 @@
         display: flex
         align-items: flex-start
         justify-content: space-between
+        @media screen and (max-width: 568px)
+            flex-direction: column
     &-story
         flex-basis: 25%
+        @media screen and (max-width: 568px)
+            margin-bottom: 40px
+            &:last-child
+                margin-bottom: 0
         &__link
             font-family: $font_futura__bold
             text-transform: uppercase
@@ -59,15 +65,28 @@
     font-family: $font_futura__bold
     font-size: 18px
     text-transform: uppercase
+    @media screen and (max-width: 568px)
+        font-size: 14px
     &__list
         display: flex
         justify-content: space-around
         align-items: center
+        @media screen and (max-width: 568px)
+            flex-wrap: wrap
+            justify-content: space-between
     &__item
         flex-basis: 22%
         display: flex
+        align-items: center
         &:nth-of-type(3)
             flex-basis: 16%
+        @media screen and (max-width: 568px)
+            margin-bottom: 20px
+            flex-basis: 100%
+            &:nth-of-type(3)
+                flex-basis: 100%
+            &:last-child
+                margin-bottom: 0
     &__icon
         padding-right: 15px
         display: flex
@@ -75,19 +94,32 @@
         &:last-child
             padding-right: 0
     &__text
+        @media screen and (max-width: 568px)
+            font-size: 15px
     &__svg
         width: 50px
         height: 50px
         fill: $color_dark
-
+        @media screen and (max-width: 568px)
+            width: 30px
+            height: 30px
 .footer
     padding: 50px 0
     background-color: $color_grey
+    @media screen and (max-width: 568px)
+        padding: 40px 0
     &__list
         display: flex
         justify-content: space-between
+        @media screen and (max-width: 568px)
+            flex-direction: column
     &-column
         flex-basis: 25%
+        @media screen and (max-width: 568px)
+            margin-bottom: 40px
+            flex-basis: 100%
+            &:last-child
+                margin-bottom: 0
         &__title
             padding-bottom: 15px
             font-family: $font_futura__bold

@@ -23,6 +23,8 @@
             width: 16px
             height: 16px
             fill: $color_green
+        @media screen and (max-width: 568px)
+            display: none
     & > .container
         display: flex
         align-items: center
@@ -35,6 +37,9 @@
         display: flex
         width: 250px
         height: 60px
+        @media screen and (max-width: 568px)
+            width: 170px
+            height: 40px
 .nav
     &__list
         list-style: none
@@ -46,3 +51,5 @@
         font-size: $size_menu
         font-weight: bold
         text-transform: uppercase
+    @media screen and (max-width: 568px)
+        display: none

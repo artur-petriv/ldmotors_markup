@@ -9,7 +9,9 @@ document.addEventListener(`DOMContentLoaded`, function () {
     $(`#tel`).mask(`+38 (000) 000-00-00`)
 
     const swiper = new Swiper(`.swiper-container`, {
+        slidesPerView: 1,
         grabCursor: false,
+        autoHeight: true,
         simulateTouch: false,
         pagination: {
             el: `.swiper-pagination`,
@@ -18,6 +20,17 @@ document.addEventListener(`DOMContentLoaded`, function () {
         navigation: {
             nextEl: `.swiper-button-next`,
             prevEl: `.swiper-button-prev`,
+        },
+        breakpoints: {
+        // when window width is >= 320px
+            320: {
+                autoHeight: true,
+                slidesPerView: 1,
+            },
+            568: {
+                autoHeight: false,
+                slidesPerView: 1,
+            },
         },
     })
 

@@ -5,6 +5,8 @@
 	background-size: cover
 	position: relative
 	z-index: 0
+	@media screen and (max-width: 568px)
+		padding: 40px 0 20px
 	&:before
 		content: ''
 		position: absolute
@@ -29,8 +31,13 @@
 			text-transform: uppercase
 			font-family: $font_futura__bold
 			font-size: 30px
+			@media screen and (max-width: 568px)
+				font-size: 17px
+				line-height: 1.65
 		&__subtitle
 			font-size: 24px
+			@media screen and (max-width: 568px)
+				font-size: 17px
 		&__form
 			margin-top: 40px
 			display: flex
@@ -62,6 +69,9 @@
 			margin-bottom: 20px
 			&::placeholder
 				color: $color_white
+			@media screen and (max-width: 568px)
+				max-width: 220px
+				font-size: 14px
 		&__button
 
 		&__wrap
@@ -70,6 +80,9 @@
 			align-items: center
 			justify-content: center
 			width: 90%
+			@media screen and (max-width: 568px)
+				flex-direction: column
+				margin: 20px auto 0
 		&__part
 			flex-basis: 50%
 			&:last-child
@@ -77,6 +90,10 @@
 		&__left
 		&__right
 			padding-left: 60px
+			@media screen and (max-width: 568px)
+				padding-bottom: 40px
+				padding-left: 0
+				order: -1
 		&__image
 		&__img
 		&__list
@@ -85,6 +102,8 @@
 			padding-bottom: 5px
 			font-size: 20px
 			font-family: $font_futura__bold
+			@media screen and (max-width: 568px)
+				font-size: 17px
 		&__number
 			padding-right: 5px
 			color: $color_green
@@ -102,4 +121,8 @@
 			color: #939393
 			border: 7px solid #939393
 			border-radius: 20px
+			@media screen and (max-width: 568px)
+				padding: 10px 20px
+				font-size: 26px
+				border: 4px solid #939393
 		&__button
