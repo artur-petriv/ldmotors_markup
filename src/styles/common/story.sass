@@ -27,10 +27,12 @@
 	&__image
 		margin-bottom: 20px
 		display: flex
+		@media screen and (max-width: 568px)
+			margin-bottom: 10px
 	&__img
 		object-fit: contain
 		width: 100%
-		height: auto
+		height: intrinsic
 		display: block
 	&__text
 		padding-top: 20px

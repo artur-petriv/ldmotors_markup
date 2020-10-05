@@ -130,9 +130,12 @@
 			display: flex
 			flex-wrap: wrap
 			justify-content: space-between
+			position: relative
 			@media screen and (max-width: 568px)
 				margin: 60px auto 0
 				flex-direction: column
+				flex-wrap: nowrap
+				justify-content: flex-start
 		&__block
 			margin: 10px 0
 			flex-basis: 40%
@@ -176,6 +179,8 @@
 					top: -5px
 					left: -19px
 			@media screen and (max-width: 568px)
+				flex-basis: 100%
+				flex: 1 0 auto
 				margin-bottom: 40px
 				&:nth-of-type(5)
 					&::before
@@ -206,4 +211,10 @@
 			align-items: center
 			@media screen and (max-width: 568px)
 				margin: 40px auto
+				max-width: 80%
+				flex: 1 0 auto
 		&__img
+			object-fit: contain
+			display: block
+			width: 100%
+			height: initial
