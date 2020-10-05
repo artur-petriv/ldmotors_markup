@@ -3,6 +3,8 @@
 	background-color: $color_dark
 	text-align: center
 	line-height: 1.65
+	@media screen and (max-width: 568px)
+		padding: 40px 0
 	&__bg
 		&_head
 			position: absolute
@@ -12,6 +14,8 @@
 			left: 50%
 			transform: translate(-50%, -50%)
 			opacity: 0.05
+			@media screen and (max-width: 568px)
+				display: none
 		&_left
 			position: absolute
 			top: 260px
@@ -19,6 +23,10 @@
 			width: 230px
 			height: 1200px
 			opacity: 0.05
+			@media screen and (max-width: 568px)
+				top: 10px
+				height: 650px
+				width: 130px
 	&__head
 		position: relative
 	&__text
@@ -30,6 +38,9 @@
 			padding: 20px 0
 			color: $color_green
 			font-family: $font_futura__bold
+			@media screen and (max-width: 568px)
+				font-size: 22px
+				line-height: 1.45
 		&__list
 			display: flex
 			flex-direction: column
@@ -38,7 +49,13 @@
 			margin-left: auto
 			max-width: 400px
 			flex-basis: 49%
+			@media screen and (max-width: 568px)
+				flex-grow: 1
+				order: 1
 		&__text
+			@media screen and (max-width: 568px)
+				text-align: left
+				line-height: 1.45
 		&__subtitle
 			padding: 10px 0 0
 			margin: 0
@@ -55,10 +72,22 @@
 				top: 50%
 				border-radius: 50%
 				z-index: 2
+			@media screen and (max-width: 568px)
+				text-align: left
+				font-size: 18px
+				line-height: 1.25
+				&::after
+					height: 10px
+					width: 10px
+					left: -20px
+					right: unset
 		&__line
 			margin: 0 20px
 			width: 2px
 			background-color: $color_green
+			@media screen and (max-width: 568px)
+				margin: 0 14px 0 0
+				order: 0
 		&__icon
 			padding-bottom: 50px
 			margin-right: auto
@@ -67,6 +96,11 @@
 			display: flex
 			align-items: center
 			justify-content: center
+			@media screen and (max-width: 568px)
+				order: 3
+				width: 70px
+				flex-basis: auto
+				justify-content: flex-end
 		&__circle
 			width: 100px
 			height: 100px
@@ -75,10 +109,16 @@
 			display: flex
 			align-items: center
 			justify-content: center
+			@media screen and (max-width: 568px)
+				width: 50px
+				height: 50px
 		&__svg
 			height: 50px
 			width: 50px
 			fill: $color_green
+			@media screen and (max-width: 568px)
+				height: 25px
+				width: 25px
 		&__item
 			display: flex
 			justify-content: space-between
@@ -102,6 +142,12 @@
 					padding-bottom: 0
 				.service-road__icon
 					padding-bottom: 10px
+			@media screen and (max-width: 568px)
+				order: 2
+				&:nth-of-type(even)
+					.service-road__subtitle
+						&::after
+							left: -20px
 	&__cost
 		margin-top: 60px
 	&__subtitle
@@ -109,6 +155,9 @@
 		font-family: $font_futura__bold
 		text-transform: uppercase
 		font-size: 20px
+		@media screen and (max-width: 568px)
+			font-size: 17px
+			line-height: 1.65
 	&__wrap
 		font-family: $font_futura__bold
 		font-size: 30px
@@ -123,6 +172,8 @@
 			color: $color_green
 			text-transform: uppercase
 			font-family: $font_futura__bold
+			@media screen and (max-width: 568px)
+				font-size: 22px
 	&__list
 		margin: 30px auto 0
 		text-align: left
