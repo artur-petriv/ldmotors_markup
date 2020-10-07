@@ -4,7 +4,7 @@
 			button.modal__close
 			h3.modal__title Оставьте ваши контакты
 			p.modal__text Наш менеджер свяжется с вами в ближайшее время
-			form.modal__form(action="order.php" type="post")
+			form.modal__form(action="order.php" method="post")
 				input.modal__input(type="text" name="client" required placeholder="Ваше имя")
 				input.modal__input.phone-mask(type="tel" name="tel" required placeholder="Номер телефона")
 				input.modal__input(type="email" name="email" placeholder="Email")
