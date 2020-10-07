@@ -5,10 +5,14 @@
 	width: 100vw
 	height: 100vh
 	z-index: 1000
+	opacity: 0
+	visibility: hidden
+	user-select: none
+	overflow: hidden
 	&__overlay
 		height: 100%
 		width: 100%
-		background-color: rgba(0,0,0,.6)
+		background-color: rgba(0,0,0,.9)
 		display: flex
 		align-items: center
 		justify-content: center
@@ -21,6 +25,7 @@
 		background-color: $color_grey
 		border-radius: 20px
 		position: relative
+		will-change: opacity, transform
 		@media screen and (max-width: 568px)
 			margin: auto 15px
 			padding: 30px 20px
@@ -75,7 +80,7 @@
 		&::before, &::after
 			content: ''
 			height: 3px
-			width: 32px
+			width: 100%
 			background-color: $color_white
 			position: absolute
 			top: 50%
@@ -89,3 +94,21 @@
 		&:hover
 			&::before, &::after
 				background-color: $color_green
+		@media screen and (max-width: 568px)
+			top: -35px
+			right: 0
+			width: 26px
+	&_is-visible
+		opacity: 1
+		visibility: visible
+		.modal__wrap
+			animation: scale .2s cubic-bezier(.68,-.55,.265,1.55) forwards
+
+
+@keyframes scale
+	0%
+		opacity: 0
+		transform: scale(.9)
+	100%
+		opacity: 1
+		transform: scale(1)

@@ -1,14 +1,14 @@
 import Swiper from "swiper/bundle"
-import tingle from "tingle.js"
 const $ = require(`jquery`)
 window.jQuery = $
 require(`jquery-mask-plugin`)
 
 
 document.addEventListener(`DOMContentLoaded`, function () {
+    // Phone mask by ID selector
+    $(`.phone-mask`).mask(`+38 (000) 000-00-00`)
 
-    $(`#tel`).mask(`+38 (000) 000-00-00`)
-
+    // SwiperJS settings
     const swiper = new Swiper(`.swiper-container`, {
         slidesPerView: 1,
         grabCursor: false,
@@ -23,7 +23,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
             prevEl: `.swiper-button-prev`,
         },
         breakpoints: {
-        // when window width is >= 320px
             320: {
                 autoHeight: true,
                 slidesPerView: 1,
@@ -35,6 +34,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
         },
     })
 
+    // Nav menu actions
     const menuBtn = document.querySelector(`.hamburger`)
     const navMenu = document.querySelector(`.nav-mob`)
     const body = document.querySelector(`.body`)
@@ -47,12 +47,26 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
     menuBtn.addEventListener(`click`, toggleMenu)
 
-    // const modal = new tingle.modal({
-    //   footer: true,
-    //   stickyFooter: false,
-    //   closeMethods: ["overlay", "button", "escape"],
-    // })
 
+    // Modal actions
+    const modal = document.getElementById(`modal`)
+    const btns = document.querySelectorAll(`.btn`)
+    const modalClose = document.querySelector(`.modal__close`)
+    const modalOverlay = document.querySelector(`.modal__overlay`)
+
+    function togglePopup() {
+        modal.classList.toggle`modal_is-visible`
+        body.classList.toggle(`overflow-hidden`)
+    }
+
+    btns.forEach((btn) => btn.addEventListener(`click`, togglePopup))
+    modalClose.addEventListener(`click`, togglePopup)
+    modalOverlay.addEventListener(`click`, (e) => {
+        e.stopPropagation()
+        e.target.closest(`.modal__wrap`) || togglePopup()
+    })
+
+    // Google maps function
     function initMap() {
         const map = new google.maps.Map(document.getElementById(`map`), {
             center: {
@@ -67,9 +81,9 @@ document.addEventListener(`DOMContentLoaded`, function () {
             position: { lat: 50.4609176, lng: 30.4956624 },
             map,
         })
-        marker.addListener(`click`, function () {
-        })
+        marker.addListener(`click`, function () {})
     }
 
+    // Init gooogle map
     initMap()
 })
