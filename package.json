@@ -68,7 +68,8 @@
     "jquery-mask-plugin": "^1.14.16",
     "normalize.css": "^8.0.1",
     "owl.carousel": "^2.3.4",
-    "swiper": "^6.3.2"
+    "swiper": "^6.3.2",
+    "tingle.js": "^0.15.3"
   },
   "editorconfig-cli": [
     "*.json",

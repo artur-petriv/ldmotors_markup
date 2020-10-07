@@ -1,9 +1,11 @@
 @import "utils/normalize.scss";
 @import "utils/variables.sass";
+@import "common/global.sass";
 @import "utils/hamburgers.scss";
+@import "../../node_modules/tingle.js/dist/tingle.css";
 @import "utils/swiper.scss";
 @import "utils/fonts.scss";
-@import "common/global.sass";
+@import "utils/modal.sass";
 @import "common/header.sass";
 @import "common/footer.sass";
 @import "common/main.sass";

@@ -1,0 +1,12 @@
+.modal
+	.modal__overlay
+		.modal__wrap
+			button.modal__close
+			h3.modal__title Оставьте ваши контакты
+			p.modal__text Наш менеджер свяжется с вами в ближайшее время
+			form.modal__form(action="order.php")
+				input.modal__input(type="text" name="client" required placeholder="Ваше имя")
+				input.modal__input(type="tel" name="tel" required placeholder="Номер телефона")
+				input.modal__input(type="email" name="email" required placeholder="Email")
+				input(type="hidden" name="l" value="1")
+				button.modal__button.button(type="submit") Свяжитесь со мной

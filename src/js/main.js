@@ -1,4 +1,5 @@
 import Swiper from "swiper/bundle"
+import tingle from "tingle.js"
 const $ = require(`jquery`)
 window.jQuery = $
 require(`jquery-mask-plugin`)
@@ -45,6 +46,12 @@ document.addEventListener(`DOMContentLoaded`, function () {
     }
 
     menuBtn.addEventListener(`click`, toggleMenu)
+
+    // const modal = new tingle.modal({
+    //   footer: true,
+    //   stickyFooter: false,
+    //   closeMethods: ["overlay", "button", "escape"],
+    // })
 
     function initMap() {
         const map = new google.maps.Map(document.getElementById(`map`), {
