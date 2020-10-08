@@ -95,7 +95,13 @@
 				margin: 0 auto
 				width: 90%
 				&:last-child
-					width: 220px
+					width: 280px
+			@media screen and (max-width: 375px)
+				&:last-child
+					width: 240px
+			@media screen and (max-width: 320px)
+				&:last-child
+					width: 230px
 		&__left
 			order: 0
 		&__right

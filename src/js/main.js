@@ -55,7 +55,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
     const modalOverlay = document.querySelector(`.modal__overlay`)
 
     function togglePopup() {
-        modal.classList.toggle`modal_is-visible`
+        modal.classList.toggle(`modal_is-visible`)
         body.classList.toggle(`overflow-hidden`)
     }
 

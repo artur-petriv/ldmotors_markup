@@ -11,7 +11,7 @@ module.exports = function pug2html() {
       .src("src/pages/*.pug")
       .pipe(plumber())
       .pipe(pugLinter({ reporter: "default" }))
-      .pipe(pug({ pretty: false }))
+      .pipe(pug({ pretty: true }))
       // .pipe(htmlValidator())
       .pipe(gulp.dest("build"))
   );
